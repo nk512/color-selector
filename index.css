@@ -1,0 +1,72 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    background: #802600;
+    color: white;
+}
+
+label {
+    display: block;
+    font-size: 20px;
+}
+
+input[type="text"] {
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-top: 10px;
+
+}
+
+input[type="range"] {
+    width: 180px;
+}
+
+.title {
+    font-size: 50px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.box {
+    height: 100px;
+    width: 70%;
+    background-color: white;
+    margin: auto;
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-text {
+    font-size: 18px;
+}
+
+.toggle-btn {
+    height: 25px;
+    width: 50px;
+    background-color: gray;
+    border-radius: 30px;
+    padding: 5px;
+    margin: 0 10px;
+}
+
+.inner-circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: white;
+    transition: all 250ms;
+}
+
+.toggle-btn.toggled> .inner-circle {
+    transform: translateX(25px);
+    background-color: #333;
+}
+
+.unselected {
+    opacity: 0.25;
+}
